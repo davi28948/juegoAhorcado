@@ -346,7 +346,7 @@ const cabezaMario = computed(() => {
   if(juegoTerminado.value){
     return "./imgs/cabezaMarioMuerto.png";
   }
-  return "./imgs/cabezaMarioMuerto.png"
+  return "./imgs/cabezaMario.png"
 })
 
 // Mostrar palabra oculta
