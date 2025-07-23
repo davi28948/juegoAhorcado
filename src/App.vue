@@ -85,55 +85,55 @@
         <div class="contenedorAhorcado">
           <img
             v-show="partesVisibles.includes('cabeza')"
-            :src="cabezaMario"
+            :src="cabeza"
             alt="Cabeza de Mario"
             :class="['cabeza', {'muerto': juegoTerminado}]"
           />
           <img
             v-show="partesVisibles.includes('torso')"
-            src="./imgs/torsoMario.png"
+            :src="torso"
             alt="Torso de Mario"
             style="width: 90px; height: 90px; object-fit: cover"
             class="torso"
           />
           <img
             v-show="partesVisibles.includes('brazoDerecho')"
-            src="./imgs/brazoDerecho.png"
+            :src="brazoDerecho"
             alt="Brazo Derecho de Mario"
             style="width: 100px; height: 100px; object-fit: cover"
             class="brazoDerecho"
           />
           <img
             v-show="partesVisibles.includes('brazoIzquierdo')"
-            src="./imgs/brazoIzquierdo.png"
+            :src="brazoIzquierdo"
             alt="Brazo Izquierdo de Mario"
             style="width: 100px; height: 100px; object-fit: cover"
             class="brazoIzquierdo"
           />
           <img
             v-show="partesVisibles.includes('piernaDerecha')"
-            src="./imgs/piernaDerecha.png"
+            :src="piernaDerecha"
             alt="Pierna Derecha de Mario"
             style="width: 160px; height: 150px; object-fit: cover"
             class="piernaDerecha"
           />
           <img
             v-show="partesVisibles.includes('piernaIzquierda')"
-            src="./imgs/piernaIzquierda.png"
+            :src="piernaIzquierda"
             alt="Pierna Izquierda de Mario"
             style="width: 160px; height: 150px; object-fit: cover"
             class="piernaIzquierda"
           />
           <img
             v-show="partesVisibles.includes('pieDerecho')"
-            src="./imgs/pieDerechoo.png"
+            :src="pieDerecho"
             alt="Pie Derecho de Mario"
             style="width: 160px; height: 150px; object-fit: cover"
             class="pieDerecho"
           />
           <img
             v-show="partesVisibles.includes('pieIzquierdo')"
-            src="./imgs/pieIzquierdo.png"
+            :src="pieIzquierdo"
             alt="Pie Izquierdo de Mario"
             style="width: 160px; height: 150px; object-fit: cover"
             class="pieIzquierdo"
@@ -183,6 +183,14 @@
 
 <script setup>
 import { ref, computed, onMounted } from "vue";
+import piernaDerecha from '@/assets/imgs/piernaDerecha.png'
+import cabeza from '@/assets/imgs/Cabeza.png'
+import torso from '@/assets/imgs/torso.png'
+import piernaIzquierda from '@/assets/imgs/piernaIzquierda.png'
+import pieDerecho from '@/assets/imgs/pieDerecho.png'
+import pieIzquierdo from '@/assets/imgs/pieIzquierdo.png'
+import brazoDerecho from '@/assets/imgs/brazoDerecho.png'
+import brazoIzquierdo from '@/assets/imgs/brazoIzquierdo.png'
 
 let titulo = ref("Bienvenido Ahorcado");
 let nombreJugador = ref("");
