@@ -183,14 +183,14 @@
 
 <script setup>
 import { ref, computed, onMounted } from "vue";
-import piernaDerecha from '@/assets/imgs/piernaDerecha.png'
-import cabeza from '@/assets/imgs/Cabeza.png'
-import torso from '@/assets/imgs/torso.png'
-import piernaIzquierda from '@/assets/imgs/piernaIzquierda.png'
-import pieDerecho from '@/assets/imgs/pieDerecho.png'
-import pieIzquierdo from '@/assets/imgs/pieIzquierdo.png'
-import brazoDerecho from '@/assets/imgs/brazoDerecho.png'
-import brazoIzquierdo from '@/assets/imgs/brazoIzquierdo.png'
+import piernaDerecha from '../assets/imgs/piernaDerecha.png'
+import cabeza from '../assets/imgs/Cabeza.png'
+import torso from '../assets/imgs/torso.png'
+import piernaIzquierda from '../assets/imgs/piernaIzquierda.png'
+import pieDerecho from '../assets/imgs/pieDerecho.png'
+import pieIzquierdo from '../assets/imgs/pieIzquierdo.png'
+import brazoDerecho from '../assets/imgs/brazoDerecho.png'
+import brazoIzquierdo from '../assets/imgs/brazoIzquierdo.png'
 
 let titulo = ref("Bienvenido Ahorcado");
 let nombreJugador = ref("");
